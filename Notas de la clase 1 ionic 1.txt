@@ -1,0 +1,29 @@
+shockdav.com (para buscar trabajo de programador)
+
+
+node modules super esta plantilla requierre de otras dependencias 
+adicionlaes por eso tenemos otra plantilla para ella(ver archivos practicas)
+
+las dependencias --lab de super estan en el material de como instalarlo
+
+HAy una app llamada ionic dep app
+Con ella podemos conectarnos a la computadora con la direcciion ip de la pc  
+
+Para ver las opciones de ionic en otra consola podemos hacer ionic start --help.
+
+La carpeta www ya tiene la aplicacion web lista para usar 
+(cuando uno arrana una apliacion se crea de una vez la carpta www).
+Para el desafio se le mandan todos los archivos menos node.modules
+
+En la carpeta src esta el archivo index, que es el punto de entrada
+(OJO OJO OJO en ionic no se debe tocar el index)
+
+En la carpeta pages, estan los componentes de la aplicacion.
+
+El rootpage lo que hace es referencia a la que sera la pagina inicial del proyecto.
+
+El orden es asi como se interelacionan:
+	index.html->app.component->home.ts->home.html
+
+ionic framework docs puedo encontrar informacion sobre los componentes, por ej los iconos.
+
