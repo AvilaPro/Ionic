@@ -1,0 +1,12 @@
+Enunciado de la tarea 1 de la sección 2759
+
+Realizar las siguientes actividades haciendo printscreen de las actividades que requieran dejar evidencia de la realizacion de la misma:
+1.- Instalar Ionic
+
+2.- Crear un proyecto nuevo con la plantilla blank
+
+3.- Modicar el html de la página HomePage de forma tal que muestre información de la carrera Programación de aplicaciones: objetivo, pensum, etc, utilizando botones, iconos y toolbar
+
+4.- Ejecutar la aplicación y mostrar como se ve en las distintas plataformas (Android, IOS y Windows Phone)
+
+5.- Visualizar la aplicación desde un dispositivo móvil real usando la aplicación IonicDevApp
