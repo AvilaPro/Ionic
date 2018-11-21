@@ -1,6 +1,7 @@
 Enunciado de la tarea 1 de la sección 2759
 
 Realizar las siguientes actividades haciendo printscreen de las actividades que requieran dejar evidencia de la realizacion de la misma:
+
 1.- Instalar Ionic
 
 2.- Crear un proyecto nuevo con la plantilla blank
