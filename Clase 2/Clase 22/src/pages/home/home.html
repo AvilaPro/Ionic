@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Practicando Directivas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item style="background: linear-gradient(to right, #5C6BC0, #26C6DA);color:white;" 
+    *ngFor="let c of cursos">
+      <ion-avatar item-start>
+        <img src={{c.imagen}}>
+      </ion-avatar>
+      <h2>{{c.nombre}}</h2>
+      <p style="color:aliceblue">{{c.descripcion}}</p>
+      <ion-note *ngIf="c.precio>1600" item-end>{{c.precio}} Bs</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>
