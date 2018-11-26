@@ -1,0 +1,13 @@
+Enunciado de la tarea 2 de la sección 2759
+
+Crear una nueva aplicación con la plantilla blank y realizar las siguientes actividades
+<	
+1.- Agregar a la página Home varios cards: uno con slides de varias fotos de la academia, un card una lista del ranking de alumnos de la academia y un card con la información de cada carrera que se dicta en la academia
+
+2.- Declarar en Home.ts un arreglo de strings e inicializarlo con nombres de imagenes que estan almacenadas en la carpeta assets/imgs. Usando un ngFor e interpolación, hacer que el slide de fotos de la academia muestre las fotos almacenadas en el arreglo (debe haber tantos slide como fotos haya en el arreglo)
+
+3.- Declarar en Home.ts una clase para que defina los datos de una carrera: nombre, precio, fecha de inicio. Declarar e inicializar un arreglo con varios objetos de la clase Carrera.
+
+4.- Usando ngFor e interpolación, crear un card para cada carrera usando los datos almacenados en el arreglo de objetos de la clase Carrera (la cantidad de cards que se genera debe ser igual a la cantidad de elementos del arreglo de carrearas)
+
+5.- Declarar en Home.ts una clase para que defina los datos de un alumno: nombre, correo, foto, puntos totales. Declarar e inicializar un arreglo con varios objetos de la clase Alumno y mostrar sus valores en la lista que está en el card usando ngFor e interpolación

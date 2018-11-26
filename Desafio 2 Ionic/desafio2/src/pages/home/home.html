@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Desafio 2 Ionic
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+      <ion-card-header style="background: linear-gradient(to right, rgb(44, 69, 211), rgb(219, 147, 14));color:white;">
+        La Academia
+      </ion-card-header>
+    <ion-slides pager>
+
+      <ion-slide style="background-color: #ec6f09" 
+      *ngFor="let f of fotos">
+        <img src={{f.imagen}}>
+        <h2>{{f.nombre}}</h2>
+      </ion-slide>
+
+    </ion-slides>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header style="background: linear-gradient(to right, rgb(44, 69, 211), rgb(219, 147, 14));color:white;">
+      Cursos
+    </ion-card-header>
+    <ion-list>
+      <ion-item style="background: linear-gradient(to right, #5C6BC0, #26C6DA);color:white;" 
+      *ngFor="let c of cursos">
+        <ion-avatar item-start>
+          <img src={{c.imagen}}>
+        </ion-avatar>
+        <h2>{{c.nombre}}</h2>
+        <p style="color:aliceblue">{{c.descripcion}}</p>
+        <ion-note item-end style="color:aliceblue">{{c.precio}} $</ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header style="background: linear-gradient(to right, rgb(44, 69, 211), rgb(219, 147, 14));color:white;">
+      Ranking de Alumnos
+    </ion-card-header>
+    <ion-list>
+      <ion-item-sliding *ngFor="let a of alumnos">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src={{a.foto}}>
+          </ion-avatar>
+          <h2>{{a.nombre}}</h2>
+          <h3>{{a.correo}}}</h3>
+          <p>{{a.notas}} Ptos.</p>
+        </ion-item>
+        <ion-item-options side="left">
+          <button ion-button color="primary">
+            <ion-icon name="text"></ion-icon>
+            Text
+          </button>
+          <button ion-button color="secondary">
+            <ion-icon name="call"></ion-icon>
+            Call
+          </button>
+        </ion-item-options>
+        <ion-item-options side="right">
+          <button ion-button color="primary">
+            <ion-icon name="mail"></ion-icon>
+            Email
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-card>
+       
+</ion-content>
