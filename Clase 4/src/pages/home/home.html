@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Clase 4 Ionic
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input  [(ngModel)]="usuario" type="text" value=""></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input  [(ngModel)]="clave" type="password"></ion-input>
+    </ion-item>
+    
+    <div padding>
+      <button block ion-button (click)="iniciarSesion()">Iniciar Sesion</button>
+    </div>
+    
+  </ion-list>
+
+
+</ion-content>

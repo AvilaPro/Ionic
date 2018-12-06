@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Iniciar Sesión
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Nombre de usuario</ion-label>
+      <ion-input [(ngModel)]="u" required type="text" name="usuario"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Clave</ion-label>
+      <ion-input [(ngModel)]="p" required type="password" name="clave"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  {{u}} , {{p}}
+  <button ion-button block (click)="verificar()" >Iniciar</button>
+
+</ion-content>
