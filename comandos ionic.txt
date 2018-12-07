@@ -1,0 +1,17 @@
+COMANDOS IONIC
+
+PARA INICIAR PROYECTO:
+
+ionic start "nombre" blank --no-deps
+
+PARA CREAR UNA NUEVA PAGINA
+
+ionic g page "nombre de la pagina"
+
+PARA CREAR UN SERVICIO
+
+ionic g provider "nombre del servicio"
+
+CUANDO EN UN PROVIDERN SE USA HTTP CLIENT HAY QUE AGREGARLO EN app.module.ts
+
+EN imports: HttpClientModule y en providers: HttpClient
