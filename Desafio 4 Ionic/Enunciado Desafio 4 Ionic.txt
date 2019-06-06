@@ -1,0 +1,13 @@
+Enunciado de la tarea 4 de la sección 2759
+
+Crear una nueva aplicación Ionic y realizar las siguientes actividades:
+
+1.- Crear 2 páginas: una para registrar crear una cuenta de usuario y otra para iniciar sesión (ambas deben usar inputs). Los datos para registrar un usuario son: nombre completo, correo, nombre de usuario (login) y clave (password). La página de inicio de sesión debe pedir login y password. Crear una página con 2 tabs para que el usuario decida si quiere registrarse o iniciar sesión
+
+2.- Crear un provider donde se almacene un arreglo de objetos Usuario (cuentas de usuario). Crear la clase Usuario que tenga los atributos: nombre completo, correo, nombre de usuario (login) y clave (password). Agregar al provider los métodos para agregar una cuenta de usuario nueva, buscar un usuario por corrreo, buscar un usuario por login y password. Cuando un usuario se registra, se debe agregar al arreglo en el provider un nuevo objeto de la clase Usuario, siempre y cuando los datos no esten vacíos y no exista un usuario con el mismo login o el mismo correo
+
+3.- En la página de inicio de sesión debe haber una opción "Olvide mi contraseña", que le muestre al usuario con una página con un input donde debe colocar el correo y un botón para buscar. Si el correo existe en el arreglo, debe mostrarse la contraseña en algún lugar de la página, si no existe, debe mostrar un mensaje de error
+
+4.- Cuando el usuario inicie sesión exitosamente, es decir, cuando el usuario escriba un nombre de usuario (login) y clave (password) que existan en el arreglo, debe mostrarse la página "home", donde aparezca el nombre completo del usuario que se acaba de autenticar. En esta página debe haber 2 botones: uno para acceder a una página que permite modificar los datos del usuario autenticado y otro botón para cerrar sesión
+
+5.- Al acceder a la página para modificar los datos, debe haber inputs inicializados con los datos del usuario autenticado, de modo que los pueda modificar y guardar. Al hacer click en el botón para cerrar sesión, debe aparecer nuevamente la página de los tabs

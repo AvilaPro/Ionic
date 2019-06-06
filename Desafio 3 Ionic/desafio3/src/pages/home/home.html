@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Desafio 3</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Productos:</h2>
+  <button (click)="onClickAgregar()" ion-button block>Agregar producto</button>
+  <ion-list>
+    <ion-item 
+      *ngFor="let prod of Productos">
+        <h2 (click)="onClickTarea(prod)">
+          {{prod.nombre}}
+        </h2>
+        <p>{{prod.precio}}</p>
+        <p>{{prod.cantidad}}</p>
+        <p>{{subtotal()}}</p>
+      <button ion-button icon-only clear item-end 
+        (click)="onClickEliminar(prod)">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Totales</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,13 @@
+Enunciado de la tarea 3 de la sección 2759
+
+Crear un proyecto nuevo Ionic con la plantilla blank y realizar las siguientes actividades:
+
+1.- Definir una clase con el nombre Producto que almacene los campos: nombre, precio y cantidad. Agregar un método que retorne el subtotal (cantidad x precio). Definir en el controlador un arreglo que almacene objetos de la clase Producto
+
+2.- Colocar en el HTML una lista que usando binding de interporlación y la directiva *ngFor permita mostrar en cada item de la lista el nombre del producto y el subtotal.
+
+3.- Colocar un boton para agregar un nuevo producto, que al hacer click sobre este muestre un alertController con inputs. Instanciar un objeto de la clase Producto usando los datos introducidos por el usuario y agregarlo al arreglo (ningun dato del producto puede estar vacío). Luego de agregado el producto, mostrar un mensaje de exito con un toast
+
+4.- Colocar a cada item un boton que permita eliminar un producto de la lista
+
+5.- Colocar un footer donde se muestre el monto total de todos los productos (sumatoria de los subtotales de cada producto del arreglo). El total debe actualizarse cada vez que se agregue o elimine un producto de la lista. Colocar en el footer un botón "Pagar" que le pregunte al usuario si esta seguro. Si el usuario responde que si, limpiar el arreglo para comenzar de nuevo
