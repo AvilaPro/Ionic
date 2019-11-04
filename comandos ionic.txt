@@ -15,3 +15,14 @@ ionic g provider "nombre del servicio"
 CUANDO EN UN PROVIDERN SE USA HTTP CLIENT HAY QUE AGREGARLO EN app.module.ts
 
 EN imports: HttpClientModule y en providers: HttpClient
+
+
+Ionic tiene una dependencia en la que comunica a Google el uso de datos de al "Angular Team" de forma anonima.
+
+Para desactivar esa dependencia luego dentro de un proyecto de Ionic se debe ejecutar en la consola el siguiente comando:
+
+ng analytics off
+
+De igual forma para activar la dependecia de nuevo se ejecuta:
+
+ng analytics on

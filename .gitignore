@@ -1,0 +1,6 @@
+/node_modules
+
+#en la laptop maelito tengo los node_modules en un .rar
+#que se debe descomprimir en cada proyecto que se #desee poner en ejecucion
+
+node_modules.rar
