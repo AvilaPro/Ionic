@@ -1,0 +1,14 @@
+<ion-header [translucent]="true" class="opacity">
+  <ion-toolbar>
+    <ion-title style="text-align: center; text-shadow: 4px 4px rgb(252, 203, 203); font-weight: bold;">
+      Linterna Eduardo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="cont" id="contenedor">
+  <div class="toggle toggle--daynight">
+    <input type="checkbox" id="toggle--daynight" class="toggle--checkbox" (change)="switchFlash($event)">
+    <label class="toggle--btn" for="toggle--daynight"><span class="toggle--feature"></span></label>
+  </div>
+</ion-content>
